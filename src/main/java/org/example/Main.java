@@ -17,8 +17,8 @@ public class Main {
 //
 //        usersDAO.addNew(addedUser);
 
-//        User user = usersDAO.getById(1);
-//        System.out.println(user);
+        User user = usersDAO.getById(8);
+        System.out.println(user);
 
 //        List<User> users = usersDAO.getAll();
 //
@@ -37,12 +37,10 @@ public class Main {
 //
 //        usersDAO.updateById(updadedUser);
 
-        User deletedUser = User.builder()
-                .id(4)
-                .build();
-
-        usersDAO.deleteById(deletedUser);
-
-
+//        User deletedUser = User.builder()
+//                .id(4)
+//                .build();
+//
+//        usersDAO.deleteById(deletedUser);
     }
 }

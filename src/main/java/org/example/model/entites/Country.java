@@ -8,23 +8,16 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "countries")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class User {
+public class Country {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "name")
     private String name;
-
-    @Column(name = "age")
-    private int age;
-
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "country_id")
-    private Country country;
 }
